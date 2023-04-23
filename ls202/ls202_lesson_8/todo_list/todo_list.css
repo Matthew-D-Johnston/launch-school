@@ -1,0 +1,128 @@
+@import url("whitespace-reset.css");
+
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #060606;
+  display: flex;
+  /*width: 100vw;*/
+  height: 100vh;
+}
+
+nav {
+  width: 335px;
+  background: #464f77;
+}
+
+nav ul {
+  margin: 70px 0 0 100px;
+}
+
+nav li.all-todos {
+  margin: 0 0 70px 0;
+}
+
+h2 {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 0 0 0 10px;
+
+}
+
+main {
+  background: #fff;
+  width: 76.5%;
+  outline: 1px solid blue;
+}
+
+main p {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #fff;
+  background: #148fd5;
+  position: relative;
+  bottom: 3px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  padding-left: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+  }
+}
+
+h1 {
+  display: inline-block;
+  font-size: 21px;
+  font-weight: lighter;
+  margin: 75px 22px 45px 32px;
+}
+
+figure.add-todo {
+  margin: 0 0 15px 32px;
+}
+
+figcaption {
+  display: inline-block;
+}
+
+figure.add-todo img {
+  margin: 0 15px 0 0;
+}
+
+figure.add-todo figcaption {
+  color: #148fd5;
+}
+
+
+ul.todo-items {
+  margin: 0 100px 0 20px;
+}
+
+ul.todo-items li {
+  border-top: 1px solid #e7e7e7;
+  padding: 15px 0 15px 10px;
+  overflow: hidden;
+}
+
+ul.todo-items figure {
+  float: left;
+  cursor: pointer;
+}
+
+ul.todo-items img {
+  display: inline-block;
+  padding: 3px 0 0 2px;
+}
+
+ul.todo-items figcaption {
+  position: relative;
+  bottom: 1px;
+  padding: 0 0 0 15px;
+}
+
+ul.todo-items figure:hover {
+  color: #148fd5;
+}
+
+button {
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  padding: 0;
+  float: right;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+}

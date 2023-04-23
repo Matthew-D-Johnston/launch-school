@@ -1,0 +1,285 @@
+@import url("whitespace-reset.css");
+
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  background: #ffffff;
+}
+
+nav {
+  position: fixed;
+  z-index: 2;
+  background: #FFFFFF;
+  width: 100%;
+  border-top: 10px solid #F5F5F5;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+nav ul {
+  display: block;
+  padding: 12px 0;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444444;
+  font-size: 12px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 23px;
+}
+
+header {
+  position: relative;
+  top: 53px;
+  z-index: 1;
+  height: 428px;
+  background-image: url("images/js_conference.png");
+  background-position: center;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: white;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 31px;
+}
+
+h3 {
+  font-family: "Open Sans";
+  font-size: 46px;
+  font-weight: 100;
+  color: #444444;
+  margin: 0 0 40px 0;
+}
+
+header img {
+  margin: 148px 0 2px 0;
+}
+
+main {
+  position: relative;
+  top: 55px;
+  text-align: center;
+}
+
+section {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 0 30px;
+  padding: 65px 0 65px 0;
+}
+
+section a.button {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 30px;
+  margin: 10px 0 0 0;
+  background-color: #3C8105;
+  display: inline-block;
+}
+
+section a.button:hover {
+  background-color: #2B6103;
+}
+
+p {
+  color: #444444;
+  font-weight: lighter;
+}
+
+section#speakers {
+  overflow: hidden;
+}
+
+#speakers img {
+  /*width: 280px;*/
+  width: 100%;
+}
+
+#speakers ul {
+  margin: 0 auto;
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+#speakers li {
+  float: left;
+  height: 380px;
+  margin: 0 0 10px 0;
+
+}
+
+#speakers li div.main {
+  position: relative;
+  width: 280px;
+  height: 380px;
+  margin: 0 7.5px 10px 7.5px;
+  border: 1px solid #E8E8E8;
+  transition: .5s ease;
+}
+
+.main h4 {
+  margin: 35px 0 8px 0;
+  color: #3C8105;
+  font-family: "Open Sans";
+  font-weight: bolder;
+  font-size: 24px;
+
+}
+
+#speakers p {
+  font-family: "Open Sans";
+  font-weight: lighter;
+}
+
+.main p {
+  margin: 0 5px;
+}
+
+div.overlay {
+  width: 280px;
+  height: 380px;
+  margin: 0 7.5px 10px 7.5px;
+  opacity: 0;
+  background: black;
+  position: relative;
+  bottom: 396px;
+  left: 1px;
+  transition: .5s ease;
+}
+
+div.overlay p {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 1rem;
+  margin: 0 20px 10px 20px;
+}
+
+div.overlay h4 {
+  margin: 15px 0 8px 0;
+  padding: 10px;
+  color: #3C8105;
+  font-family: "Open Sans";
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+li div.overlay:hover {
+  opacity: 0.90;
+}
+
+table {
+  margin: 0 auto;
+  width: 70%;
+  border-top: 1px solid #F5F5F5;
+}
+
+table img {
+  width: 130px;
+}
+
+td {
+  text-align: left;
+  padding: 15px 10px;
+  border-bottom: 1px solid #F5F5F5;
+  font-size: 25px;
+}
+
+table a {
+  text-decoration: none;
+  font: bolder 18px "Open Sans";
+  display: block;
+  color: #3C8105;
+  margin: 7px 0 0 0;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
+
+table span {
+  font-size: 9px;
+  display: inline-block;
+  position: relative;
+  bottom: 5px;
+  background: #EEEEEE;
+  padding: 1px 4px;
+  border: 1px solid #AAAAAA;
+}
+
+section#location article,
+section#call-for-papers article {
+  width: 70%;
+  margin: 0 auto;
+}
+
+section#location h5 {
+  text-align: left;
+  padding: 0 5px 5px 5px;
+}
+
+section#location p,
+section#call-for-papers p {
+  text-align: left;
+  padding: 0 5px 15px 5px;
+  line-height: 1.5rem;
+}
+
+section#call-for-papers a.button {
+  margin-top: 0;
+}
+
+section dl {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+section dt {
+  margin: 0 5px 0 5px;
+  font: bold 18px "Open Sans";
+  /*font-size: 20px;*/
+}
+
+section ul.platinum {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section ul.gold {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section ul.silver {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section ul.support {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+section li {
+  margin: 0 20px 0 0;
+}

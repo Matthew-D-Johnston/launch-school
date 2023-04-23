@@ -1,0 +1,40 @@
+@import url("whitespace-reset.css");
+
+main {
+  background-color: #ffffff;
+  padding: 125px 0 85px;
+}
+
+main article {
+  margin: 0 auto;
+  width: 60%;
+}
+
+article:first-child {
+  padding-bottom: 75px;
+}
+
+article h2 {
+  font-size: 36px;
+  color: #45494d;
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+h2 span {
+  padding: 0 28px;
+  color: #2f2840;
+}
+
+article h3 {
+  font-size: 24px;
+  color: #3e59b2;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+article p {
+  font-size: 20px;
+  color: #45494d;
+  text-align: center;
+}

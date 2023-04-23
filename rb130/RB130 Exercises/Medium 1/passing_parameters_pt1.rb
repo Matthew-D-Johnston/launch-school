@@ -1,0 +1,17 @@
+# passing_parameters_pt1.rb
+
+items = ['apples', 'corn', 'cabbage', 'wheat']
+
+def gather(items)
+  puts "Let's start gathering food."
+  yield(items)
+  puts "Nice selection of food we have gathered!"
+end
+
+gather(items) do |items|
+  puts "#{items.join(', ')}"
+end
+
+gather(items) do |produce| 
+  puts "We've gathered some vegetables: #{produce[1]} and #{produce[2]}"
+end

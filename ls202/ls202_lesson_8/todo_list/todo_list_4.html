@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo List</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="todo_list_4.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+    <nav id="nav">
+      <ul>
+        <li class="all-todos">
+          <table class="todo">
+            <thead>
+              <tr>
+                <th><img src="images/all-todos.png" alt="All Todos List Icon" /></th>
+                <th class="nav-title">All Todos</th>
+                <th><p>18</p></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="selected">
+                <td></td>
+                <td class="nav-date">02/16</td>
+                <td><p>8</p></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="nav-date">03/16</td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="nav-date">04/16</td>
+                <td><p>1</p></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="nav-date">05/16</td>
+                <td><p>1</p></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="nav-date">06/16</td>
+                <td><p>6</p></td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>
+          <img src="images/done.png" alt="Completed Icon" />
+          <h2 class="nav-title">Completed</h2>
+          <ul>
+            <li class="nav-date">02/15</li>
+            <li class="nav-date">03/15</li>
+            <li class="nav-date">04/15</li>
+            <li class="nav-date">05/15</li>
+            <li class="nav-date">06/14</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <label class="nav-toggle" for="nav-toggle"><img src="images/hamburger.png" alt="Click to toggle navigation menu" /></label>
+      <h1>02/16</h1><p>8</p>
+      <figure class="add-todo">
+        <img src="images/plus.png" alt="add item" />
+        <figcaption>Add new to do</figcaption>
+      </figure>
+      <ul class="todo-items">
+        <li>
+          <figure>
+            <label class="modal-toggle" for="modal-toggle">
+              <img src="images/unticked-box.png" alt="unticked box" />
+              <figcaption>Item 1</figcaption>
+            </label>
+          </figure>
+          <button class="style"><img src="images/trash.png" alt="remove to do item" /></button>
+        </li>
+        <li>
+          <figure>
+            <img src="images/unticked-box.png" alt="unticked box" />
+            <figcaption>Item 2</figcaption>
+          </figure>
+          <button class="style"><img src="images/trash.png" alt="remove to do item" /></button>
+        </li>
+        <li class="completed">
+          <figure>
+            <img src="images/ticked-box.png" alt="unticked box" />
+            <figcaption>Item 3</figcaption>
+          </figure>
+          <button class="style"><img src="images/trash.png" alt="remove to do item" /></button>
+        </li>
+        <li class="completed">
+          <figure>
+            <img src="images/ticked-box.png" alt="unticked box" />
+            <figcaption>Item 4</figcaption>
+          </figure>
+          <button class="style"><img src="images/trash.png" alt="remove to do item" /></button>
+        </li>
+        <li class="completed">
+          <figure>
+            <img src="images/ticked-box.png" alt="unticked box" />
+            <figcaption>Item 5</figcaption>
+          </figure>
+          <button class="style"><img src="images/trash.png" alt="remove to do item" /></button>
+        </li>
+        <li>
+          <figure>
+            <img src="images/unticked-box.png" alt="unticked box" />
+            <figcaption>Item 6</figcaption>
+          </figure>
+          <button class="style"><img src="images/trash.png" alt="remove to do item" /></button>
+        </li>
+        <li>
+          <figure>
+            <img src="images/unticked-box.png" alt="unticked box" />
+            <figcaption>Item 7</figcaption>
+          </figure>
+          <button class="style"><img src="images/trash.png" alt="remove to do item" /></button>
+        </li>
+        <li>
+          <figure>
+            <img src="images/unticked-box.png" alt="unticked box" />
+            <figcaption>Item 8</figcaption>
+          </figure>
+          <button class="style"><img src="images/trash.png" alt="remove to do item" /></button>
+        </li>
+        <li>
+          <figure>
+            <img src="images/unticked-box.png" alt="unticked box" />
+            <figcaption>Item 9</figcaption>
+          </figure>
+          <button class="style"><img src="images/trash.png" alt="remove to do item" /></button>
+        </li>
+      </ul>
+      <input type="checkbox" id="modal-toggle" />
+      <div class="modal">
+      </div>
+      <aside>
+        <form class="modal" action="#" method="post">
+          <fieldset>
+            <label for="item-title">Title</label>
+            <input type="text" name="title" id="item-title" value="Item 2" />
+          </fieldset>
+
+          <fieldset>
+            <label>Due Date</label>
+            <select name="day">
+              <option value="" disabled selected>Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+            /
+            <select name="month">
+              <option value="" disabled selected>Month</option>
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+            </select>
+            /
+            <select name="year">
+              <option value="" disabled selected>Year</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="description">
+            <label for="description">Description</label>
+            <textarea rows="10" placeholder="Description" id="description"></textarea>
+          </fieldset>
+
+          <fieldset class="buttons">
+            <input type="submit" value="Save">
+            <input type="button" value="Mark As Complete">
+          </fieldset>
+        </form>
+      </aside>
+    </main>
+  </body>
+</html>

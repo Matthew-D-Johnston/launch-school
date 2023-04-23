@@ -1,0 +1,249 @@
+@import url("whitespace-reset.css");
+
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #060606;
+  display: grid;
+  grid-template-columns: 335px auto 100px;
+  height: 100vh;
+}
+
+nav {
+  background: #464f77;
+  font-weight: lighter;
+}
+
+nav > ul {
+  margin: 70px 0 0 0;
+}
+
+nav li.all-todos {
+  margin: 0 0 70px 0;
+}
+
+.nav-title {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+th > img {
+  margin-left: 100px;
+  margin-bottom: 12.5px;
+}
+
+li > img {
+  margin-left: 100px;
+}
+
+th.nav-title {
+  margin: 4px 60px 0 10px;
+}
+
+th:nth-child(3) p {
+  color: #fff;
+  font-weight: lighter;
+  width: 23px;
+  height: 19px;
+  text-align: center;
+  background: #6b7292;
+  border-radius: 45%;
+  padding: 2px 3px 0 2px;
+  margin-bottom: 13px;
+}
+
+h2.nav-title {
+  display: inline-block;
+  position: relative;
+  bottom: 6px;
+  margin: 0 0 0 10px;
+}
+
+tbody tr td {
+  padding: 12.5px 0 12.5px 10px;
+}
+
+.nav-date {
+  color: #a3a7bb;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr.selected td {
+  color: #fff;
+}
+
+tr.selected {
+  background: #383f5f;
+}
+
+td:nth-child(3) {
+  padding-right: 32px;
+}
+
+tr.selected p {
+  position: relative;
+  left: 0.1px;
+}
+
+td:nth-child(3) p {
+  padding: 1px 0 0 5px;
+  color: #fff;
+  background: #6b7292;
+  border-radius: 200px;
+}
+
+nav tr.selected p {
+  background: #148fd5;
+  position: relative;
+  right: 5px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 1px 0 0 1px;
+}
+
+nav li:nth-child(2) ul {
+  margin: 25px 0 0 140px;
+}
+
+nav li:nth-child(2) ul li {
+  margin-bottom: 28px;
+  text-decoration: line-through;
+}
+
+main {
+  background: #fff;
+}
+
+main p {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #fff;
+  background: #148fd5;
+  position: relative;
+  bottom: 3px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  padding-left: 1px;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 21px;
+  font-weight: lighter;
+  margin: 27px 22px 45px 32px;
+}
+
+figure.add-todo {
+  margin: 0 0 15px 32px;
+}
+
+figcaption {
+  display: inline-block;
+}
+
+figure.add-todo img {
+  margin: 0 15px 0 0;
+}
+
+figure.add-todo figcaption {
+  color: #148fd5;
+}
+
+
+ul.todo-items {
+  margin: 0 0 0 20px;
+}
+
+ul.todo-items li {
+  border-top: 1px solid #e7e7e7;
+  padding: 15px 0 15px 10px;
+  overflow: hidden;
+}
+
+ul.todo-items figure {
+  float: left;
+  cursor: pointer;
+}
+
+ul.todo-items img {
+  display: inline-block;
+  padding: 3px 0 0 2px;
+}
+
+ul.todo-items figcaption {
+  position: relative;
+  bottom: 1px;
+  padding: 0 0 0 15px;
+}
+
+ul.todo-items figure:hover {
+  color: #148fd5;
+}
+
+li.completed figcaption {
+  color: #b3b3b3;
+  text-decoration: line-through;
+}
+
+button {
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  padding: 0;
+  float: right;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+}
+
+/* New Toggle Code */
+
+div.toggle {
+  /*display: none;*/
+  visibility: hidden;
+  /*position: relative;*/
+  margin: 22px 0 0 32px;
+}
+
+div.toggle img {
+  width: 25px;
+  height: 20px;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    padding: 0 100px 0 0;
+  }
+
+  div.toggle {
+    /*display: unset;*/
+    visibility: visible;
+  }
+
+  nav + main > div > input#nav-toggle:checked {
+    display: block;
+  }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Form</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        margin-left: 30%;
+      }
+
+      fieldset {
+        border: none;
+      }
+      dt, dd {
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 5px 0;
+      }
+
+      dt {
+        width: 15%;
+      }
+
+      dd {
+        width: 92%;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      input[type="text"], [type="email"] {
+        width: 500px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="first_name">First Name</label></dt><!-- 
+           --><dd><input type="text" name="first_name" id="first_name" /></dd>
+
+          <dt><label for="last_name">Last Name</label></dt><!-- 
+           --><dd><input type="text" name="last_name" id="last_name" /></dd>
+
+          <dt><label for="email">Email Address</label></dt><!-- 
+           --><dd><input type="email" name="email" id="email" placeholder="email@example.com" /></dd>
+
+          <dt><label for="city">City</label></dt><!-- 
+           --><dd><input type="text" name="city" id="city" /></dd>
+
+          <dt><label for="state">State</label></dt><!-- 
+           --><dd>
+                <select name="state" id="state">
+                  <option>AK</option>
+                  <option>AL</option>
+                  <option>AR</option>
+                  <option>AZ</option>
+                  <option>CA</option>
+                  <option>CO</option>
+                  <option>CT</option>
+                  <option>DC</option>
+                  <option>DE</option>
+                  <option>FL</option>
+                  <option>GA</option>
+                  <option>HI</option>
+                  <option>IA</option>
+                  <option>ID</option>
+                  <option>IL</option>
+                  <option>IN</option>
+                  <option>KS</option>
+                  <option>KY</option>
+                  <option>LA</option>
+                  <option>MA</option>
+                  <option>MD</option>
+                  <option>ME</option>
+                  <option>MI</option>
+                  <option>MN</option>
+                  <option>MO</option>
+                  <option>MS</option>
+                  <option>MT</option>
+                  <option>NC</option>
+                  <option>ND</option>
+                  <option>NE</option>
+                  <option>NH</option>
+                  <option>NJ</option>
+                  <option>NM</option>
+                  <option>NV</option>
+                  <option>NY</option>
+                  <option>OH</option>
+                  <option>OK</option>
+                  <option>OR</option>
+                  <option>PA</option>
+                  <option>RI</option>
+                  <option>SC</option>
+                  <option>SD</option>
+                  <option>TN</option>
+                  <option>TX</option>
+                  <option>UT</option>
+                  <option>VA</option>
+                  <option>VT</option>
+                  <option>WA</option>
+                  <option>WI</option>
+                  <option>WV</option>
+                  <option>WY</option>
+                </select>
+              </dd>
+
+          <dt><label for="zip">Zip Code</label></dt><!-- 
+           --><dd><input type="text" name="zip" id="zip" pattern="[0-9]{5}" placeholder="e.g. 02309" /></dd>
+        </dl>
+
+        <p>Which of these colors do you like best?</p>
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="color" value="red" checked />
+              Red
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="color" value="blue" />
+              Blue
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="color" value="yellow" />
+              Yellow
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="color" value="green" />
+              Green
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="color" value="orange" />
+              Orange
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="color" value="purple" />
+              Purple
+            </label>
+          </li>
+        </ul>
+
+        <p>Which web technologies do you want to learn?</p>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="html" value="HTML" />
+              HTML
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="checkbox" name="css" value="CSS" />
+              CSS
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="checkbox" name="javascript" value="JavaScript" />
+              JavaScript
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="checkbox" name="ruby" value="Ruby" />
+              Ruby
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="checkbox" name="rails" value="Rails" />
+              Rails
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="checkbox" name="python" value="Python" />
+              Python
+            </label>
+          </li>
+        </ul>
+
+        <dl>
+          <dt><label for="comments">Comments</label></dt>
+          <dd>
+            <textarea name="comments" id="comments" rows="6" cols="80" 
+                      placeholder="Tell us what you think"></textarea>
+          </dd>
+        </dl>
+
+
+        <input type="hidden" name="timestamp" value="2020-09-14" />
+        <input type="submit" value="Send" />
+        <input type="reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>

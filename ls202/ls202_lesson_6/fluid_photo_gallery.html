@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fluid Photo Gallery</title>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        background-color: black;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      figure {
+        margin: 0;
+        padding: 0 0 30px;
+      }
+
+      figcaption {
+        color: white;
+        margin-top: 15px;
+      }
+
+      body {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+      }
+
+      main {
+        background-color: #3D3D3D;
+        box-sizing: border-box;
+        padding: 50px 20px;
+        min-width: 500px;
+        max-width: 1000px;
+        grid-column-start: 2;
+        display: grid;
+        grid-template-areas: 
+          "header"
+          "main_photo"
+          "sub_photos"
+      }
+
+      img {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+      }
+
+      .main-photo img {
+        border: 1rem solid white;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      li {
+        border: 3px solid white;
+        flex-basis: 22%;
+      }
+
+
+      h1 {
+        color: white;
+        margin-bottom: 25px;
+        text-align: center;
+        grid-area: header;
+      }
+
+      .main-photo {
+        grid-area: main_photo;
+      }
+
+      .sub-photos {
+        grid-area: sub_photos;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>My Photo Gallery</h1>
+      <figure class="main-photo">
+        <img src="http://placehold.it/1200x900" alt="Placeholder image" class="main-photo" />
+        <figcaption>Example photo</figcaption>
+      </figure>
+      <ul class="sub-photos">
+        <li><img src="http://placehold.it/1200x900" alt="Placeholder image" /></li>
+        <li><img src="http://placehold.it/1200x900" alt="Placeholder image" /></li>
+        <li><img src="http://placehold.it/1200x900" alt="Placeholder image" /></li>
+        <li><img src="http://placehold.it/1200x900" alt="Placeholder image" /></li>
+      </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<h3>Welcome!</h3>
+<p>What type of story would you like to write? (Choose one and press the appropriate button).</p>
+<form class="inline" method="get" action="/stocks">
+  <button type="submit">Top Stocks</button>
+</form>
+<form class="inline" method="get" action="/shareholders">
+  <button type="submit">Top Shareholders</button>
+</form>
+<form class="inline" method="get" action="/etfs">
+  <button type="submit">Best ETFs</button>
+</form>
+<form class="inline" method="get" action="/makes_money">
+  <button type="submit">How Company X Makes Money</button>
+</form>
+<form class="inline" method="get" action="/earnings">
+  <button type="submit">Earnings Preview</button>
+</form>
+<form class="inline" method="get" action="/ownership">
+  <button type="submit">5 Companies Owned by X</button>
+</form>
+<form class="inline" method="get" action="/biggest_companies">
+  <button type="submit">10 Biggest X Companies</button>
+</form>
+<% if session[:admin] %>
+  <form method="post" action="/signout">
+    <p class="user-status">
+      Signed in.
+      <button type="submit">Sign Out</button>
+    </p>
+  </form>
+<% else %>
+  <p class="user-status"><a href="/signin">Admin Sign In</a></p>
+<% end %>

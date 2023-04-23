@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let request = new XMLHttpRequest();
+      request.open('GET', '/api/schedules');
+      request.responseType = 'json';
+      request.timeout = 5000;
+      
+      request.addEventListener('load', event => {
+        let schedules = request.response;
+        let scheduleCount = {};
+
+        if (schedules.length > 0) {
+          schedules.forEach(schedule => {
+            let id = schedule.staff_id;
+            scheduleCount[`staff ${id}`] = scheduleCount[`staff ${id}`] ? scheduleCount[`staff ${id}`] : 0;
+            scheduleCount[`staff ${id}`] += 1;
+          });
+
+          Object.keys(scheduleCount).forEach(count => {
+            let message = `${count}: ${scheduleCount[count]}`;
+            alert(message);
+          });
+        } else {
+          alert('There are currently no schedules available for booking.')
+        }
+      });
+
+      request.addEventListener('timeout', () => {
+        alert('Server timeout. Please try again.');
+      });
+
+      request.addEventListener('loadend', event => {
+        alert('The request has completed');
+      });
+
+      request.send();
+    });
+  </script>
+  <head>
+    <meta charset='utf-8'>
+    <title>Schedules!</title>
+  </head>
+  <body>
+  </body>
+</html>

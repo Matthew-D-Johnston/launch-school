@@ -1,0 +1,36 @@
+@import url("whitespace-reset.css");
+
+main {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 125px 0 210px;
+}
+
+main h2 {
+  font-size: 36px;
+  color: #45494d;
+  padding: 0 0 45px;
+}
+
+h2 span {
+  padding: 0 28px;
+  color: #2f2840;
+}
+
+main p {
+  font-size: 20px;
+  color: #45494d;
+  padding: 0 325px 125px;
+}
+
+main section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 350px;
+}
+
+figcaption {
+  font-size: 24px;
+  color: #3e59b2;
+  padding: 30px 0 0 0;
+}

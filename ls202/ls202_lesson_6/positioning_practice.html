@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Positioning Practice</title>
+    <meta charset="utf-8" />
+    <style>
+      #positioned {
+        background-color: #ffc;
+        padding: 30px 15px;
+        position: fixed;
+        box-sizing: border-box;
+        right: 50%;
+        margin-right: -200px;
+        top: 20px;
+        width: 400px;
+        z-index: 2;
+      }
+
+      #middle {
+        background-color: rgba(0, 0, 0, .6);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+      }
+
+      #positioned span {
+        background-color: pink;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>
+        The economic impact of COVID-19 has raised the stakes for policy makers everywhere, and central bankers are all in. But perhaps none more so than Jerome Powell, Chairman of the U.S. Federal Reserve. From rate cuts to liquidity support and from swap lines to asset purchase schemes, the Fed has opened up the floodgates. It’s still not clear when they’ll be closed again. But with all this new money gushing into the economy, shouldn’t Chairman Powell, the rest of the FOMC, and everyone else be worried about inflation?
+      </p>
+      <p>
+        It’s just ECON 101, right? Too much money chasing too few goods results in inflation. Double the supply of money and prices inevitably follow, if not immediately then at some point in the not-too-distant future. It’s only a matter of time. But when? One day. One day, inflation shall come. We are now just passing the time, waiting for inflation.
+      </p>
+      <p>
+        “Inflation is on its way,” say the apostles of the quantity theory of money (QToM). “We can prove it, a priori,” they say, and point to a version of the equation of exchange: MV = PY. Both sides of that equation represent nominal GDP, which is the monetary value of the total amount of output (i.e. goods and services) produced within an economy over a given period of time. Each side of the equation just uses different variables to arrive at the same quantity.
+      </p>
+      <p>
+        On the left-hand side, we have the total supply of money (M) multiplied by the rate at which money switches hands, or the velocity of money (V). On the right-hand side, we have the average price (P) of a unit of output multiplied by total output (Y). Both sides are a measure of nominal GDP, and the assumptions made by the QToM about this equation provide us with a rationale for why money printing might lead to inflation.
+      </p>
+      <p>
+        Money’s velocity, or the rate at which money circulates, is assumed to be fixed, determined by entrenched spending habits and social practices. Paychecks arrive every two weeks, bills must be paid every month, beer on Fridays and groceries on Saturdays, etc. The business cycle may induce certain deviations in money’s velocity — rising in booms and falling in busts — but the general trend is flat, fixed by that great deadener known as habit.
+      </p>
+      <p>
+        Total output is also assumed to be fixed, at least in the short run. The factors of production — land, labor, and capital — are operating at close-to-full capacity. If more output is to be produced, then more land must be acquired, more workers must be birthed or immigrate from abroad, more factories and equipment must be built, or at the very least, the respective productivities of each factor must be increased. All of this takes time.
+      </p>
+      <p>
+        If V and Y are fixed, then a rising M must lead to a rise in P in order to maintain the equality, MV = PY, so the reasoning goes. In other words, if the total supply of money is increased, then we should expect inflation. Unlike money’s velocity and total output, whose changes depend on either external shocks or the progression of time, the supply of money is at the discretion of those who run the printing press, which can be booted up at a moment’s notice.
+      </p>
+      <p>
+        “We print it digitally,” says Fed Chairman Pozzo, …er Powell. “As the central bank, we have the ability to create money, digitally.” Translation: the Fed can increase M. But how exactly does a digital printing press work? It’s not a secret. Powell says, “we [create money] by buying Treasury bills, or bonds, or other guaranteed government securities.”
+      </p>
+      <p>
+        In ordinary times, the purchase of securities (and also their sale) is one tool by which the Fed implements monetary policy, a tool which goes by the name of open market operations (something discussed in more detail here). In extraordinary times, the Fed expands its security purchases, big time. The total number, the maturity of the securities, and the range of specific types of securities purchased, are all ratcheted up. This is called quantitative easing (QE).
+      </p>
+      <p>
+        We’ve been here before, and not that long ago. The last time the Fed went on a shopping spree for assets was in response to the 2007–2008 global financial crisis and Great Recession that followed. The chief architect of that program was former Fed Chairman Ben Bernanke. Here’s a few words from him on the subject.
+      </p>
+      <p>
+        Bernanke starts with the unprovocative claim that the Fed “lends” money to banks. If you think of the securities the Fed purchases as collateral for the money credited to banks’ reserve accounts, then it is a kind of lending (especially if at some future date the transaction is reversed or unwound). But then he confesses that this is much more “akin, although not exactly the same, to printing money than it is to borrowing.” Why? The money that is lent never existed prior to the loan being made.
+      </p>
+      <p>
+        Bernanke then explains why the Fed is doing this: “we need to do that, because our economy is very weak and inflation is very low.” Emphasis on the low inflation. “When the economy begins to recover, that’ll be the time when we need to unwind those programs, raise interest rates, reduce the money supply, and make sure that we have a recovery that does not involve inflation.” Bernanke’s thoughts are haunted by the QToM, but his first priority is recovery. Inflation is only a secondary concern at this point.
+      </p>
+      <p>
+        That interview was done in 2009, not long after the Fed began its first round of QE. Two more rounds followed, the last of which ended in October 2014. The graph below illustrates those three rounds of QE and their impact on the size of the Fed’s balance sheet. The blue line represents the number of assets held by the Fed.
+      </p>
+      <p>
+        The Fed’s balance sheet stopped increasing after the end of QE3 and remained fairly steady over the next three years. Around the beginning of 2018, the Fed began to reduce the size of its balance sheet, selling securities instead of buying them. But it didn’t get very far before it had to reverse course, resuming asset purchases in 2019, and well before anyone even knew what COVID-19 was. Then, the blue line goes right vertical — that you can blame on the pandemic. Money printer go brrr…
+      </p>
+      <p>
+        The Fed’s preferred measure of inflation is the Core Personal Consumption Expenditures (Core PCE) price index (note that Core PCE excludes food and energy prices as these tend to be much more volatile). The Fed’s goal is for this price index to rise at an annual rate of 2%. That means an inflation rate of 2% each year.
+      </p>
+      <p>
+        Since the big drop in 2009, core inflation has only edged above the Fed’s 2% target a few times, once around the start of 2012 and once more around the middle of 2018. Most of the rest of the time, it’s been below target. Now it’s called a target for a reason, and not an upper limit — persistently low inflation risks turning into deflation, which can be just as harmful, if not more so, than inflation. For a blatantly severe case, think Great Depression. For something more insidious and current, think Japan’s deflated generation (here).
+      </p>
+      <p>
+        But it looks like Bernanke got what he wanted, a non-inflationary…hmm, recovery? Some would question the strength of that recovery, but put that question aside for the moment. The present concern is how to think about the QToM considering that despite all the money printing, inflation has been essentially nonexistent. The Fed more than quadrupled its balance sheet in a span of about five years and all we got is sub-2% inflation. And it’s worth noting that the Fed never did “unwind” its balance sheet as Bernanke claimed would be necessary to avoid inflation.
+      </p>
+      <p>
+        The QToM is just one version of how to interpret the quantity of exchange, MV = PY. While that equation implies an equality, it says nothing about the behaviour of the individual variables, nor does it imply any causal relationship between them. If there is any causal relationship, that relationship derives not from the equation itself but from assumptions about how the world works. There are at least three other versions of how the world works, and which aren’t necessarily mutually exclusive.
+      </p>
+      <p>
+        The QToM assumes that output, or Y, is fixed in the short run and that’s because the factors of production that produce output are assumed to be operating at full capacity. If there is an increase in the supply of money that leads to an increase in spending, output cannot increase because the factors of production are already being fully utilized. Prices will rise to curtail the demand. But what if the factors of production, and thus the businesses that employ them, are not actually operating at full capacity?
+      </p>
+      <p>
+        One way we could test this assumption is by looking at the capacity utilization rate, which measures the proportion of total productive capacity being utilized. For example, if the capacity utilization rate is 100%, then the economy is fully utilizing its capacity to produce output. Anything less than 100% means there’s some room to increase output before capacity is maxed out. It’s a measure of just how much productive slack there actually is in the economy.
+      </p>
+      <p>
+        The capacity utilization rate was about 90% around the middle of the 1960s. Over the past 50 years there has been a lot of variation. Capacity utilization plunges during recessions (the shaded areas) and then gradually recovers. However, each recovery period has generally led to a capacity utilization rate that is lower than it was prior to the recession. The period following the Great Recession is no different. Is that what recovery looks like? Ben? Oh, and then April 2020. The economy just fell off a cliff.
+      </p>
+      <p>
+        Another way to measure slack in the economy is through the labor market. This one’s a bit tricky. The unemployment rate fell to 3.5% in the latter half of last year. It hasn’t been that low in 50 years, suggesting tightness rather than slack. A tight labor market generally means workers have more bargaining power to demand higher wages and other benefits. If firms want the workers, they have to fork over the cash. In order to maintain profit margins, they might increase the prices of the goods and services they supply. Now that’s a recipe for inflation. But we’re still waiting.
+      </p>
+      <p>
+        The problem with the unemployment rate as a measure of labor-market slack is its bluntness. To be counted among the employed, you only have to work one hour per week. One. Hour. Per. Week. That doesn’t sound like anyone’s full labor capacity. Of course, one hour per week is probably not that common. But the point of the matter is that the headline unemployment rate makes no distinction between the fully employed and those working part time, and who may be wanting to work full time.
+      </p>
+      <p>
+        In early 2018, the San Francisco Fed found that the level of involuntary part-time employment was about 40% higher than one would normally expect it to be at the current stage of the recovery (here). Part-time, not to mention gig-type work is usually not associated with strong labor bargaining power, especially if it’s involuntary. Nobody demands higher wages when there is already a scarcity of hours to work. If there’s any labor struggle going on, it’s likely to be between employees battling for hours. Meanwhile, new grads take unpaid internships just to get some experience.
+      </p>
+      <p>
+        Also, the labor force participation rate — the proportion of the population that is considered part of the labor force, both unemployed and employed — is significantly lower than it was prior to the Great Recession. Part of this could be due to the greying of the population, leading to more people retiring than are entering the labor force. But it is significant how much it slumped immediately after the Great Recession, and never recovered, an involuntary early retirement of sorts.
+      </p>
+      <p>
+        The unemployment rate can fall not just when the unemployed find work, but also when the unemployed drop out of the labor force altogether. If five out of a hundred labor-force participants are unemployed, the unemployment rate is 5% (5 / 100 = 0.05 * 100%); if one of the five who are unemployed, tired of looking for a job that isn’t there, drops out of the labor force, the employment situation “improves” as the unemployment rate falls to 4% (4/99 = 0.0404 * 100%). Is that what recovery looks like? Ben?
+      </p>
+      <p>
+        All this is not to say that the employment situation had not improved at all over the past decade or that it was still in a dismal state. One might even go so far as to say that it had recovered, ten years later. But it probably was not as hot as some were trumpeting. Powell said it best: “to call something hot, you need to see some heat” (here). The problem, in his opinion, was that wages weren’t responding (probably due to a lack of bargaining power). He continued, “While we hear reports of companies finding it hard to find qualified labor, we don’t see wages responding.”
+      </p>
+      <p>
+        Companies saying they are finding it hard to find qualified labor is just another way of saying they don’t want to pay to train people, they want the government to do it. If the labor market was tight and the economy was booming, firms would be throwing out all kinds of incentives to attract anybody with two feet and heart beat. Firms would not only train workers, they’d actually offer paid training. Imagine that was the way the world worked. Alas, we’re still waiting.
+      </p>
+    </section>
+    <div id="positioned">
+      <span></span>
+      I'm positioned!
+    </div>
+    <div id="middle"></div>
+  </body>
+</html>
